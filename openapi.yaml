@@ -3,6 +3,8 @@ info:
   title: Simple Copilot Plugin
   version: 1.0.0
   description: A basic API that returns user info
+servers:
+  - url: https://example.com  # Replace this with your actual API URL later
 paths:
   /api/me:
     get:
