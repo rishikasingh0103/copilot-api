@@ -1,0 +1,24 @@
+openapi: 3.0.1
+info:
+  title: Simple Copilot Plugin
+  version: 1.0.0
+  description: A basic API that returns user info
+paths:
+  /api/me:
+    get:
+      summary: Get user info
+      operationId: getUserInfo
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  name:
+                    type: string
+                    example: Rishika Singh
+                  role:
+                    type: string
+                    example: Software Engineer Intern
